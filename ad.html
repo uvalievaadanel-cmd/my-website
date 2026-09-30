@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Тіркелу</title>
+
+  <link rel="stylesheet" href="ad.css">
+  <script src="ad.js" defer></script>
+</head>
+
+<body>
+
+  <main class="register-page">
+    <section class="register-card">
+<a class="logo" href="index.html">
+    <img src="a357f3b9-d960-4c55-ac00-ac1ec652dbff-Photoroom.png" alt="Qadam">
+</a>
+      <div class="heading">
+        <p class="label">Жаңа аккаунт</p>
+        <h1>Тіркелу</h1>
+        <p>Сайт мүмкіндіктерін пайдалану үшін аккаунт ашыңыз.</p>
+      </div>
+
+      <form id="registerForm" novalidate>
+
+        <div class="form-group">
+          <label for="fullName">Аты-жөніңіз</label>
+
+          <input
+            id="fullName"
+            name="fullName"
+            type="text"
+            placeholder="Мысалы: Айбек Серік"
+            autocomplete="name"
+          >
+
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Электрондық пошта</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="example@mail.com"
+            autocomplete="email"
+          >
+
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Құпиясөз</label>
+
+          <div class="password-box">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Кемінде 8 таңба"
+              autocomplete="new-password"
+            >
+
+            <button
+              class="show-password"
+              type="button"
+              data-target="password"
+            >
+              Көрсету
+            </button>
+          </div>
+
+          <small class="hint">
+            Кемінде 8 таңба, бір бас әріп және бір сан болсын.
+          </small>
+
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Құпиясөзді қайталаңыз</label>
+
+          <div class="password-box">
+            <input
+              id="confirmPassword"
+              name="confirmPassword"
+              type="password"
+              placeholder="Құпиясөзді қайта енгізіңіз"
+              autocomplete="new-password"
+            >
+
+            <button
+              class="show-password"
+              type="button"
+              data-target="confirmPassword"
+            >
+              Көрсету
+            </button>
+          </div>
+
+          <small class="error"></small>
+        </div>
+
+        <label class="terms">
+          <input id="terms" name="terms" type="checkbox">
+          <span>Қолдану ережелерімен келісемін</span>
+        </label>
+
+        <small id="termsError" class="error"></small>
+
+        <button class="submit-button" type="submit">
+          Тіркелу
+        </button>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+      </form>
+
+      <p class="login-link">
+        Аккаунтыңыз бар ма?
+        <a href="#">Кіру</a>
+      </p>
+
+    </section>
+  </main>
+
+</body>
+</html>
+
+
+
